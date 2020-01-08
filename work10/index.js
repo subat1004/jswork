@@ -12,24 +12,37 @@ function monkey(){
         monkey.push(i)
     }
     let i=0
-    while (monkey.length>1){
+    while(monkey.length>1){
         i++;
-        head = monkey.shift()
-        if(i%kick!=0){
-            monkey.push(head);
-    }
+       head = monkey.shift()
+       if(i%kick!=0){
+           monkey.push(head);
+       }
     }
     document.getElementById('monkeyking').innerText = monkey[0]
 }
-
-var str = 'ABCABC';    
-var newStr = '';   
-    for (var i = 0; i < str.length; i++) {       
-      if (newStr.lastIndexOf(str[i]) == -1) {         
-newStr += str[i];        }    }    
-    for (var i = 0; i < newStr.length; i++) {      
-var count = 0;      
-    for (var j = 0; j < str.length; j++) {     
-             
-      if(newStr[i]==str[j]){                count++;            }        }   
-   console.log(newStr[i],count);    }
+// function stat(){
+//     let str = document.getElementById("str").value
+//     str1 = str.toLocaleLowerCase();
+//     let obj={}
+//     str1.split('').reduce((pre, ok) => {
+//         pre[ok] ? pre[ok]++ : pre[ok] = 1
+//         return obj 
+//     }, {})
+//   document.getElementById('result').innerText = JSON.stringify(obj)
+// }
+function stat(){
+    let str = document.getElementById("str").value
+    // str1 = str.toLocaleLowerCase();
+    // let obj={}
+    // str1.split('').reduce((pre, ok) => {
+    //     pre[ok] ? pre[ok]++ : pre[ok] = 1
+    //     return obj
+    // }, {})
+  let ok = str.split('').sort()
+  obj = ok.reduce((pre,item) =>{
+      pre[item] ? pre[item]++ : pre[item] = 1
+      return pre 
+  },{})
+  document.getElementById('result').innerText = JSON.stringify(obj)
+}

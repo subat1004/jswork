@@ -1,23 +1,21 @@
-.box {
+.box{
     margin: 0 auto;
     position: relative;
-    background: url(ms.jpg);
+    background:url(ms.jpg);
     background-size: cover;
     width: 702px;
     height: 378px;
 }
-
-.box div {
+.box div{
     float: left;
-    width:50px;
+    width: 50px;
     height: 50px;
-    border:1px solid #ccc;
-    margin-left:5px;
+    border: 1px solid #ccc;
+    margin-left: 5px;
     line-height: 50px;
     text-align: center;
-    color: aqua;
+    color: red;
     position: relative;
-    top:328px;
-    left:350px;
+    top: 328px;
+    left: 350px;
 }
-

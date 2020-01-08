@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>苏巴提的万年历</title>
+        <title>苏巴提的年历</title>
         <link rel="stylesheet" type="text/css" href="index.css">
     </head>
     <body>
@@ -10,9 +10,9 @@
             <span class="preyear" id="preyear" data-year="" onclick="setCalendar(this.dataset.year)"></span>
             <span id="curyear"></span>
             <span class="nextyear" id="nextyear" data-year="" onclick="setCalendar(this.dataset.year)"></span>
-            <div class="box" id="cal"></div>
+        <div class="box" id="cal"></div>
     </body>
-    <script>
+     <script>
     var year = new Date().getFullYear()
     var pre = year-1
     var next = year+1
@@ -25,4 +25,4 @@
     </script>
     <script src="calendar.js"></script>
     <script src="index1.js"></script>
-</html>
+    </html>

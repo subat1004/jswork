@@ -1,12 +1,12 @@
-$('#toRight').click(function ()  {
+$('#toRight').click(function(){
     $('#right>select').append($('#left>select>option:selected'));
 });
-$('#toLeft').click(function (){
+$('#toLeft').click(function(){
     $('#left>select').append($('#right>select>option:selected'));
 });
-$('#toAllRight').click(function (){
+$('#toAllRight').click(function(){
     $('#right>select').append($('#left>select>option'));
 });
-$('#toAllLeft').click(function (){
-    $('#left>select').append($('#right>select>option'));
+$('#toAllLeft').click(function(){
+    $('#left>select').append($('#left>select>option'));
 });

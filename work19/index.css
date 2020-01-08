@@ -1,6 +1,6 @@
-.scrcollbox {
-    position: absolute;
+.scrollbox{
+    position:absolute;
     height: 400px;
     overflow: auto;
-    widows: 400px;
+    width: 400px;
 }

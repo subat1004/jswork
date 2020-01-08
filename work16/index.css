@@ -9,11 +9,11 @@
     width: 400px;
     height: 400px;
     position: absolute;
-    top: 0;
-    left: 360px;
+    top:0;
+    left:360px;
     border: 1px solid #ccc;
     overflow: hidden;
-    display: none;
+    display:none;
 }
 
 .mask{
